@@ -94,3 +94,11 @@ plt.xlabel('Time (seconds)')
 plt.ylabel('Frequency')
 plt.title('Performance Distribution of Queue Implementations')
 plt.savefig('ex4.jpeg')
+
+'''
+Depending on the specific operations (enqueue and dequeue) and their complexity
+in each implementation, one might outperform the other. The ArrayQueue's insert(0, item)
+operation has a linear complexity because it needs to move all other elements. Conversely,
+the LinkedListQueue can add an element at the head in constant time, but removing an element
+from the tail requires traversing the list unless it's the only element.
+'''
